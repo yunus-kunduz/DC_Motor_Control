@@ -22,10 +22,23 @@ The control strategy successfully addressed the following system limitations:
 ## 🖼️ Visual Results
 Below is the comparison of different control states:
 
-![PID Comparison](assets/comparison_plot.png)
 * **Red**: Uncontrolled system showing high error.
 * **Blue**: Manually tuned PID ($K_p=100, K_i=200, K_d=10$) providing the fastest response.
 * **Green**: MATLAB automated tuning for a balanced, conservative response.
+
+## 📈 Project Evolution
+
+### 1. Baseline Performance (Uncontrolled)
+![Uncontrolled Response](assets/open_loop.png)
+*The open-loop response shows a significant steady-state error and slow rise time.*
+
+### 2. PID Control Impact
+![PID Comparison](assets/pid_comparison.png)
+*The blue line demonstrates how the PID controller eliminates error and drastically improves response speed.*
+
+### 3. Tuning & Optimization
+![Tuning Comparison](assets/tuning_comparison.png)
+*Comparison between manual tuning and MATLAB's auto-tuner, showcasing optimized transient response.*
 
 ## 🚀 How to Run
 1.  Open MATLAB.
